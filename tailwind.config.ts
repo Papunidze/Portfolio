@@ -33,11 +33,6 @@ export default {
           secondary: "rgb(201, 201, 201)",
         },
       },
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-      },
     },
 
     backgroundImage: {
