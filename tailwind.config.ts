@@ -25,21 +25,20 @@ export default {
           secondary: "#fafafa",
         },
         typography: {
-          primary: "rgb(23, 23, 23)",
+          primary: "rgb(6, 3, 24)",
           secondary: "rgb(102, 102, 102)",
         },
         border: {
           primary: "rgb(235, 235, 235)",
           secondary: "rgb(201, 201, 201)",
         },
+        hover: {
+          primary: "rgb(123, 113, 148)",
+        },
       },
-    },
-
-    backgroundImage: {
-      "gradient-1": "linear-gradient(to top left, #DC4731, #3B0918)",
-      "gradient-2": "linear-gradient(to top left, #1B314D, #2C4669)",
-      "gradient-3": "linear-gradient(to top left, #FEFBF5, #edf2fb)",
-      "gradient-4": "linear-gradient(to top left, #d7e3fc, #FEFBF5)",
+      fontFamily: {
+        pacifico: ['"Pacifico"', "serif"],
+      },
     },
   },
   plugins: [typography],
