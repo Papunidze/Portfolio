@@ -25,7 +25,6 @@
   line-height: 28px;
   -webkit-font-feature-settings: "ss01";
   font-feature-settings: "ss01";
-
   color: #060318;
 }
 
@@ -41,7 +40,7 @@
     @apply prose md:prose-lg text-primary-dark;
   }
   .link {
-    @apply text-sm font-semibold leading-7 cursor-pointer inline-flex;
+    @apply text-xl font-semibold leading-7 cursor-pointer inline-flex antialiased;
   }
   .link:hover {
     @apply text-hover-primary;

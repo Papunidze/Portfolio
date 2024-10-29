@@ -2,56 +2,57 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex gap-2 flex-col">
-      <section className="w-full flex items-center justify-center sticky text-center h-24">
-        <nav className="whitespace-nowrap block">
-          <div className="m-0 p-0 border-0 align-baseline">
-            <ul className="flex gap-6">
-              <li className="flex relative items-center leading-4">
-                <a className="link">About</a>
+    <main className="flex flex-col gap-4">
+      <section className="flex flex-col lg:flex-row min-h-screen bg-backgrounds-primary">
+        <div className="w-full md:w-24  flex flex-col justify-center items-center py-4">
+          <nav className=" -rotate-0 flex flex-col space-y-4 items-center justify-center md:-rotate-90">
+            <ul className="flex flex-row items-center justify-center gap-4 text-center">
+              <li>
+                <a
+                  href="#projects"
+                  className="text-typography-primary hover:text-typography-secondary font-bold leading-7"
+                >
+                  Experience
+                </a>
               </li>
-              <li className="flex relative items-center leading-4">
-                <a className="link">Experience</a>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-typography-primary hover:text-typography-secondary font-bold leading-7"
+                >
+                  Projects
+                </a>
               </li>
-              <li className="flex relative items-center leading-4">
-                <a className="link">Projects</a>
-              </li>
-              <li className="flex relative items-center leading-4">
-                <a className="link">Contact</a>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-typography-primary hover:text-typography-secondary font-bold leading-7"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
-          </div>
-        </nav>
-      </section>
-      <section className="relative w-full flex flex-col justify-center items-center bg-white select-none">
-        <div className="flex items-center justify-center text-center">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black  relative font-pacifico mb-[-1rem]  lg:mb-[-1.5rem]">
-            W
-          </h2>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black z-20 relative font-pacifico mb-[-1rem]  lg:mb-[-1.5rem]">
-            e
-          </h2>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black  relative font-pacifico mb-[-1rem]  lg:mb-[-1.5rem]">
-            b
-          </h2>
+          </nav>
         </div>
 
-        <div className="relative w-full max-w-xs md:max-w-md lg:max-w-lg h-auto flex justify-center items-center z-10">
-          <Image
-            src="/images/bg.svg"
-            alt="Company Logo"
-            layout="intrinsic"
-            width={500}
-            priority
-            height={500}
-            className="rounded-full shadow-md"
-          />
-
-          <h2 className="absolute bottom-0 -translate-y-1/2 text-4xl md:text-6xl  font-bold z-20 font-pacifico text-white">
-            Developer
-          </h2>
+        <div className="w-full lg:w-4/5 lg:max-w-3xl h-[calc(100vh-10vh)] lg:h-screen bg-black flex justify-center items-center p-6 rounded-xl text-white">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold">Main Content</h1>
+            <p className="text-lg mt-4">content</p>
+          </div>
         </div>
       </section>
     </main>
   );
 }
+/*
+       <Image
+            src="/images/bg.svg"
+            alt="Company Logo"
+            layout="intrinsic"
+            width={600}
+            height={600}
+            priority
+            className="rounded-full shadow-md w-full h-full"
+          />
+*/
